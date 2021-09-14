@@ -1,0 +1,44 @@
+@use '../../../../assets/config' as *;
+.banner{
+    color: $text-higlighted;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    flex: 1;
+    img{
+        height: 20vw;
+        margin: 0 20px;
+        box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+    }
+    &__info{
+        h1{
+            font-family: "Gotham-Bold";
+            font-size: 84px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $text;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &__extra_info{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        span{
+            margin: 0 8px;
+            color: $text;
+        }
+    }
+}
+
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: local("Gotham-Bold"),
+     url("../../../../assets/fonts/GothamBold.ttf") format("truetype");
+    font-weight: 900;
+    }

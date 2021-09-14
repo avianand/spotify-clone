@@ -1,0 +1,59 @@
+@use '../../../assets/config' as * ;
+.sidebar{
+    flex:0.16;
+    min-width: 230px;
+    height: 100vh;
+    background-color: $black;
+    color: $text;
+    padding-left: 10px;
+}
+
+.sidebar_logo{
+    height: 65px;
+    padding: 10px;
+    margin-right: auto;
+}
+.sidebar_menu{
+    font-size: 18px;
+    padding: 0.5rem;
+    margin-right: auto;
+    text-decoration: none;
+    li{
+        padding: 0.5rem;
+        a{
+            text-decoration: none;
+            color: $text
+        }
+        a:hover{
+            color: $text-higlighted;            
+
+        }
+    }
+}
+.sidebar_option{
+    color: $text;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 40px;
+    transition: 200ms color ease-in;
+    &__icon{
+        padding: 0 10px 0 10px;
+        
+    }
+    p{
+        margin: 10px 0 0 20px;
+        font-size: 14px;
+    }
+}
+.sidebar_option:hover{
+    color: $text-higlighted;
+}
+hr {
+    border: none;
+    height: 0.5px;
+    width: 90%;
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}

@@ -1,0 +1,8 @@
+@use '../../assets/config' as *;
+
+.player{
+    position: relative; 
+    &__body{
+        display: flex;
+    }  
+}

@@ -1,0 +1,73 @@
+@use '../../../assets/config' as *;
+.footer{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    height: 60px;
+    width: 98%;
+    padding: 20px;
+    z-index: 999;
+    color: $text;
+    background-color: $now-playing-background-color;
+    .icon:hover{
+        transition: 200ms color ease-in;
+        color: $text-higlighted;
+    }
+    &__left{
+        flex: 0.3;
+        display: flex;
+     
+        align-items: center;
+        max-width: 300px;
+
+        &__albumart{
+            height: 60px;
+            width: 60px;
+            object-fit: contain;
+            margin-right: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &__songinfo{
+            padding-right: 10px;
+            h4{
+                color: $text-higlighted;
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .icon{
+            padding: 0 10px;
+        }
+    }
+    &__center{
+        flex: 0.4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        max-width: 300px;
+       .icon.play:hover{
+           
+           transition: transform 200ms ease-in-out;
+           transform: scale(1.2);
+       }
+    }
+    &__right{
+        flex: 0.3;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 240px;
+        margin-right: 10px;
+        .slider{
+            height: 24;
+            width: 100px;
+            color: $text;
+        }
+    }
+}

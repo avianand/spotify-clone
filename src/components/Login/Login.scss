@@ -1,0 +1,19 @@
+@use '../../assets/config' as *;
+
+.login{
+    display: grid;
+    place-items: center;
+    background-color: black;
+    height: 100vh;
+}
+.login>img{
+    width: 100%;
+}
+.login>a{
+    border-radius: 99px;
+    padding: 20px;
+    font-weight: 700;
+    color: white;
+    background-color: $spotify-green;
+    text-decoration: none;
+}

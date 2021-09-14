@@ -1,0 +1,33 @@
+@use '../../../../assets/config' as *;
+.songlist{
+    padding: 20px;
+    &__likebutton{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+            .play{
+                font-size: 68px;
+                color: $spotify-green;
+                margin-right: 30px;
+                &:hover{
+                    transition: 100ms transform ease-in;
+                    transform: scale(1.08);
+                }
+            }
+            .favorite{
+                font-size: 34px;
+                color: $spotify-green;
+                margin-right: 30px;
+            }
+            .more{
+                font-size: 34px;
+                color: $text;
+            }
+        
+        
+    }
+    &__list{
+
+    }
+}

@@ -1,0 +1,24 @@
+@import './config';
+@import './mixins';
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "Gotham-Book";
+    font-weight: 100;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: local("Gotham-Book"),
+     url("./fonts/GothamBook.ttf") format("truetype");
+    font-weight: normal;
+    }
+
+    
